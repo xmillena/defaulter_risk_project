@@ -52,9 +52,7 @@ def criar_tabela_analitica(df_pagamentos, df_info, df_cadastral):
         df_abt['TAXA_ATRASO_HISTORICA'] = (df_abt['QTD_ATRASOS_ANTERIORES'] / df_abt['QTD_COBRANCAS_ANTERIORES']).fillna(0)
         df_abt = df_abt.drop(columns=['FLAG_INADIMPLENTE_ANTERIOR'])
     
-    # Imputação de nulos (Medianas)
-    """df_abt['VALOR_A_PAGAR'] = df_abt['VALOR_A_PAGAR'].fillna(df_abt['VALOR_A_PAGAR'].median())
-    df_abt['RENDA_MES_ANTERIOR'] = df_abt['RENDA_MES_ANTERIOR'].fillna(df_abt['RENDA_MES_ANTERIOR'].median())"""
+    
     for col in imputar_mediana_cols:
         if col in df_abt.columns:
             media_historica_cliente = df_abt.groupby('ID_CLIENTE')[col].transform(
