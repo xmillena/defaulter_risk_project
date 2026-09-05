@@ -109,8 +109,6 @@ Devido à sua robustez contra outliers financeiros e capacidade de capturar rela
 
 ## Arquitetura e Organização do Repositório
 
-O projeto segue um padrão modular que separa a construção de variáveis do treinamento e da inferência final:
-
 ```text
 ├── data/
 │   ├── base_info.csv                       # Informações de Renda
