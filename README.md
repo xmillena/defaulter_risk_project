@@ -100,10 +100,10 @@ Devido à sua robustez contra outliers financeiros e capacidade de capturar rela
 
 | Partição | Random Forest (AUC) | Regressão Logística (AUC) | Naive Bayes (AUC) |
 | :--- | :---: | :---: | :---: |
-| **Teste (Jul-Dez 2020)** | **~0.909** | *Baseline Test* | *Baseline Test* |
-| **OOT (2021 em diante)** | **~0.918** | *Baseline OOT* | *Baseline OOT* |
+| **Teste (Jul-Dez 2020)** | **~0.909** | ** | ** |
+| **OOT (2021 em diante)** | **~0.918** | ** | ** |
 
-*Nota Analítica:* Um modelo de crédito sustentando AUC superior a 0.90 em uma janela temporal inédita (Out-of-Time) demonstra altíssima estabilidade, provando que as features criadas são resilientes a variações econômicas ao longo dos meses.
+Um modelo de crédito sustentando AUC superior a 0.90 em uma janela temporal (Out-of-Time) demonstra estabilidade, mostrando que as features criadas são resilientes a variações econômicas ao longo dos meses.
 
 ---
 
