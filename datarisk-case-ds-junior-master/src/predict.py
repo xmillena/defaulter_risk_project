@@ -89,7 +89,7 @@ axes[2].set_xlabel('Probabilidade Média')
 axes[2].set_ylabel('')
 
 plt.tight_layout()
-plt.savefig('../data/analise_predicoes.png', dpi=300) # Salva o gráfico
+plt.savefig('../data/analise_predicoes.png', dpi=300) 
 plt.show()
 
 print("\nResumo da Ação Sugerida:")
